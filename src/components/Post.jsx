@@ -37,8 +37,8 @@ const Post = ({ data }) => {
                 <p className="card-text">{data.description}</p>
                 <p className="card-text">
                   <ConverDateTime
-                    seconds={data.time.seconds}
-                    nanoseconds={data.time.nanoseconds}
+                    seconds={data.time?.seconds}
+                    nanoseconds={data.time?.nanoseconds}
                   />
                 </p>
                 <Link to={`/post/${data.id}`} className="btn btn-info mx-3">

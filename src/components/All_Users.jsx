@@ -45,8 +45,8 @@ const All_Users = () => {
                     </div>
                     <ConverDateTime
                       text="Register Time :- "
-                      seconds={user.timestamp.seconds}
-                      nanoseconds={user.timestamp.nanoseconds}
+                      seconds={user.timestamp?.seconds}
+                      nanoseconds={user.timestamp?.nanoseconds}
                     />
                   </div>
                 </>
